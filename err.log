@@ -1,606 +1,144 @@
-2021-10-19T12:35:10: SyntaxError: Unexpected token } in JSON at position 34
-2021-10-19T12:35:10:     at JSON.parse (<anonymous>)
-2021-10-19T12:35:10:     at parse (C:\Users\84929\Desktop\Nodejs\node_modules\body-parser\lib\types\json.js:89:19)
-2021-10-19T12:35:10:     at C:\Users\84929\Desktop\Nodejs\node_modules\body-parser\lib\read.js:121:18
-2021-10-19T12:35:10:     at invokeCallback (C:\Users\84929\Desktop\Nodejs\node_modules\raw-body\index.js:224:16)
-2021-10-19T12:35:10:     at done (C:\Users\84929\Desktop\Nodejs\node_modules\raw-body\index.js:213:7)
-2021-10-19T12:35:10:     at IncomingMessage.onEnd (C:\Users\84929\Desktop\Nodejs\node_modules\raw-body\index.js:273:7)
-2021-10-19T12:35:10:     at IncomingMessage.emit (events.js:412:35)
-2021-10-19T12:35:10:     at IncomingMessage.emit (domain.js:470:12)
-2021-10-19T12:35:10:     at endReadableNT (internal/streams/readable.js:1317:12)
-2021-10-19T12:35:10:     at processTicksAndRejections (internal/process/task_queues.js:82:21)
-2021-10-29T22:31:03: CastError: Cast to ObjectId failed for value "614791ac499f70eda22df39" (type string) at path "_id" for model "User"
-2021-10-29T22:31:03:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
-2021-10-29T22:31:03:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
-2021-10-29T22:31:03:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
-2021-10-29T22:31:03:   messageFormat: undefined,
-2021-10-29T22:31:03:   stringValue: '"614791ac499f70eda22df39"',
-2021-10-29T22:31:03:   kind: 'ObjectId',
-2021-10-29T22:31:03:   value: '614791ac499f70eda22df39',
-2021-10-29T22:31:03:   path: '_id',
-2021-10-29T22:31:03:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
-2021-10-29T22:31:03:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
-2021-10-29T22:31:03:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
-2021-10-29T22:31:03:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
-2021-10-29T22:31:03:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
-2021-10-29T22:31:03:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
-2021-10-29T22:31:03:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
-2021-10-29T22:31:03:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
-2021-10-29T22:31:03:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
-2021-10-29T22:31:03:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
-2021-10-29T22:31:03:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
-2021-10-29T22:31:03:   valueType: 'string'
-2021-10-29T22:31:03: }
-2021-10-30T00:01:03: TypeError: Cannot read property 'path' of undefined
-2021-10-30T00:01:03:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
-2021-10-30T00:01:03:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
-2021-10-30T00:01:03:     at Generator.next (<anonymous>)
-2021-10-30T00:01:03:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
-2021-10-30T00:01:03:     at new Promise (<anonymous>)
-2021-10-30T00:01:03:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
-2021-10-30T00:01:03:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
-2021-10-30T00:01:03:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
-2021-10-30T00:01:03:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
-2021-10-30T00:01:03:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
-2021-10-30T00:03:58: TypeError: Cannot read property 'path' of undefined
-2021-10-30T00:03:58:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
-2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
-2021-10-30T00:03:58:     at Generator.next (<anonymous>)
-2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
-2021-10-30T00:03:58:     at new Promise (<anonymous>)
-2021-10-30T00:03:58:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
-2021-10-30T00:03:58:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
-2021-10-30T00:03:58:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
-2021-10-30T00:03:58:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
-2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
-2021-10-30T15:46:30: CastError: Cast to ObjectId failed for value "ping" (type string) at path "_id" for model "User"
-2021-10-30T15:46:30:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
-2021-10-30T15:46:30:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
-2021-10-30T15:46:30:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
-2021-10-30T15:46:30:   messageFormat: undefined,
-2021-10-30T15:46:30:   stringValue: '"ping"',
-2021-10-30T15:46:30:   kind: 'ObjectId',
-2021-10-30T15:46:30:   value: 'ping',
-2021-10-30T15:46:30:   path: '_id',
-2021-10-30T15:46:30:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
-2021-10-30T15:46:30:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
-2021-10-30T15:46:30:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
-2021-10-30T15:46:30:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
-2021-10-30T15:46:30:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
-2021-10-30T15:46:30:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
-2021-10-30T15:46:30:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
-2021-10-30T15:46:30:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
-2021-10-30T15:46:30:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
-2021-10-30T15:46:30:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
-2021-10-30T15:46:30:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
-2021-10-30T15:46:30:   valueType: 'string'
-2021-10-30T15:46:30: }
-2021-10-30T15:46:43: CastError: Cast to ObjectId failed for value "ping" (type string) at path "_id" for model "User"
-2021-10-30T15:46:43:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
-2021-10-30T15:46:43:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
-2021-10-30T15:46:43:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
-2021-10-30T15:46:43:   messageFormat: undefined,
-2021-10-30T15:46:43:   stringValue: '"ping"',
-2021-10-30T15:46:43:   kind: 'ObjectId',
-2021-10-30T15:46:43:   value: 'ping',
-2021-10-30T15:46:43:   path: '_id',
-2021-10-30T15:46:43:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
-2021-10-30T15:46:43:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
-2021-10-30T15:46:43:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
-2021-10-30T15:46:43:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
-2021-10-30T15:46:43:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
-2021-10-30T15:46:43:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
-2021-10-30T15:46:43:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
-2021-10-30T15:46:43:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
-2021-10-30T15:46:43:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
-2021-10-30T15:46:43:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
-2021-10-30T15:46:43:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
-2021-10-30T15:46:43:   valueType: 'string'
-2021-10-30T15:46:43: }
-2021-10-30T16:25:01: TypeError: Cannot read property 'path' of undefined
-2021-10-30T16:25:01:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
-2021-10-30T16:25:01:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
-2021-10-30T16:25:01:     at Generator.next (<anonymous>)
-2021-10-30T16:25:01:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
-2021-10-30T16:25:01:     at new Promise (<anonymous>)
-2021-10-30T16:25:01:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
-2021-10-30T16:25:01:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
-2021-10-30T16:25:01:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
-2021-10-30T16:25:01:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
-2021-10-30T16:25:01:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
-2021-10-30T16:27:25: TypeError: Cannot read property 'path' of undefined
-2021-10-30T16:27:25:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
-2021-10-30T16:27:25:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
-2021-10-30T16:27:25:     at Generator.next (<anonymous>)
-2021-10-30T16:27:25:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
-2021-10-30T16:27:25:     at new Promise (<anonymous>)
-2021-10-30T16:27:25:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
-2021-10-30T16:27:25:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
-2021-10-30T16:27:25:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
-2021-10-30T16:27:25:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
-2021-10-30T16:27:25:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
-2021-10-30T23:04:23: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "User"
-2021-10-30T23:04:23:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
-2021-10-30T23:04:23:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
-2021-10-30T23:04:23:     at runMicrotasks (<anonymous>)
-2021-10-30T23:04:23:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
-2021-10-30T23:04:23:   messageFormat: undefined,
-2021-10-30T23:04:23:   stringValue: '"1"',
-2021-10-30T23:04:23:   kind: 'ObjectId',
-2021-10-30T23:04:23:   value: '1',
-2021-10-30T23:04:23:   path: '_id',
-2021-10-30T23:04:23:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
-2021-10-30T23:04:23:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
-2021-10-30T23:04:23:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
-2021-10-30T23:04:23:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
-2021-10-30T23:04:23:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
-2021-10-30T23:04:23:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
-2021-10-30T23:04:23:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
-2021-10-30T23:04:23:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
-2021-10-30T23:04:23:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
-2021-10-30T23:04:23:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
-2021-10-30T23:04:23:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
-2021-10-30T23:04:23:   valueType: 'string'
-2021-10-30T23:04:23: }
-2021-10-30T23:04:32: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "User"
-2021-10-30T23:04:32:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
-2021-10-30T23:04:32:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
-2021-10-30T23:04:32:     at runMicrotasks (<anonymous>)
-2021-10-30T23:04:32:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
-2021-10-30T23:04:32:   messageFormat: undefined,
-2021-10-30T23:04:32:   stringValue: '"1"',
-2021-10-30T23:04:32:   kind: 'ObjectId',
-2021-10-30T23:04:32:   value: '1',
-2021-10-30T23:04:32:   path: '_id',
-2021-10-30T23:04:32:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
-2021-10-30T23:04:32:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
-2021-10-30T23:04:32:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
-2021-10-30T23:04:32:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
-2021-10-30T23:04:32:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
-2021-10-30T23:04:32:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
-2021-10-30T23:04:32:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
-2021-10-30T23:04:32:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
-2021-10-30T23:04:32:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
-2021-10-30T23:04:32:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
-2021-10-30T23:04:32:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
-2021-10-30T23:04:32:   valueType: 'string'
-2021-10-30T23:04:32: }
-2021-10-30T23:04:36: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "User"
-2021-10-30T23:04:36:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
-2021-10-30T23:04:36:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
-2021-10-30T23:04:36:     at runMicrotasks (<anonymous>)
-2021-10-30T23:04:36:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
-2021-10-30T23:04:36:   messageFormat: undefined,
-2021-10-30T23:04:36:   stringValue: '"1"',
-2021-10-30T23:04:36:   kind: 'ObjectId',
-2021-10-30T23:04:36:   value: '1',
-2021-10-30T23:04:36:   path: '_id',
-2021-10-30T23:04:36:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
-2021-10-30T23:04:36:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
-2021-10-30T23:04:36:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
-2021-10-30T23:04:36:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
-2021-10-30T23:04:36:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
-2021-10-30T23:04:36:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
-2021-10-30T23:04:36:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
-2021-10-30T23:04:36:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
-2021-10-30T23:04:36:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
-2021-10-30T23:04:36:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
-2021-10-30T23:04:36:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
-2021-10-30T23:04:36:   valueType: 'string'
-2021-10-30T23:04:36: }
-2021-10-31T11:02:52: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:52: Require stack:
-2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:52:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:52:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:52:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:52:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:52:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:52:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:52:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:52:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:52:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:52:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:52:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:52:   requireStack: [
-2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:52:   ]
-2021-10-31T11:02:52: }
-2021-10-31T11:02:53: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:53: Require stack:
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:53:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:53:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:53:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:53:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:53:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:53:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:53:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:53:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:53:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:53:   requireStack: [
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:53:   ]
-2021-10-31T11:02:53: }
-2021-10-31T11:02:53: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:53: Require stack:
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:53:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:53:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:53:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:53:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:53:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:53:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:53:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:53:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:53:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:53:   requireStack: [
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:53:   ]
-2021-10-31T11:02:53: }
-2021-10-31T11:02:54: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:54: Require stack:
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:54:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:54:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:54:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:54:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:54:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:54:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:54:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:54:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:54:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:54:   requireStack: [
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:54:   ]
-2021-10-31T11:02:54: }
-2021-10-31T11:02:54: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:54: Require stack:
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:54:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:54:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:54:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:54:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:54:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:54:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:54:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:54:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:54:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:54:   requireStack: [
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:54:   ]
-2021-10-31T11:02:54: }
-2021-10-31T11:02:55: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:55: Require stack:
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:55:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:55:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:55:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:55:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:55:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:55:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:55:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:55:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:55:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:55:   requireStack: [
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:55:   ]
-2021-10-31T11:02:55: }
-2021-10-31T11:02:55: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:55: Require stack:
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:55:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:55:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:55:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:55:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:55:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:55:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:55:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:55:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:55:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:55:   requireStack: [
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:55:   ]
-2021-10-31T11:02:55: }
-2021-10-31T11:02:56: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:56: Require stack:
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:56:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:56:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:56:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:56:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:56:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:56:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:56:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:56:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:56:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:56:   requireStack: [
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:56:   ]
-2021-10-31T11:02:56: }
-2021-10-31T11:02:56: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:56: Require stack:
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:56:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:56:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:56:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:56:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:56:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:56:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:56:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:56:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:56:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:56:   requireStack: [
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:56:   ]
-2021-10-31T11:02:56: }
-2021-10-31T11:02:57: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:57: Require stack:
-2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:57:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:57:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:57:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:57:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:57:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:57:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:57:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:57:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:57:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:57:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:57:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:57:   requireStack: [
-2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:57:   ]
-2021-10-31T11:02:57: }
-2021-10-31T11:02:58: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:58: Require stack:
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:58:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:58:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:58:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:58:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:58:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:58:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:58:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:58:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:58:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:58:   requireStack: [
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:58:   ]
-2021-10-31T11:02:58: }
-2021-10-31T11:02:58: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:58: Require stack:
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:58:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:58:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:58:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:58:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:58:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:58:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:58:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:58:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:58:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:58:   requireStack: [
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:58:   ]
-2021-10-31T11:02:58: }
-2021-10-31T11:02:59: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:59: Require stack:
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:59:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:59:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:59:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:59:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:59:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:59:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:59:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:59:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:59:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:59:   requireStack: [
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:59:   ]
-2021-10-31T11:02:59: }
-2021-10-31T11:02:59: Error: Cannot find module 'bcrypt'
-2021-10-31T11:02:59: Require stack:
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:02:59:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:02:59:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:02:59:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:02:59:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:02:59:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:02:59:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:02:59:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:02:59:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:02:59:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:02:59:   requireStack: [
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:02:59:   ]
-2021-10-31T11:02:59: }
-2021-10-31T11:03:00: Error: Cannot find module 'bcrypt'
-2021-10-31T11:03:00: Require stack:
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:03:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:03:00:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:03:00:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:03:00:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:03:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:03:00:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:03:00:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:03:00:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:03:00:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:03:00:   requireStack: [
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:03:00:   ]
-2021-10-31T11:03:00: }
-2021-10-31T11:03:00: Error: Cannot find module 'bcrypt'
-2021-10-31T11:03:00: Require stack:
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
-2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
-2021-10-31T11:03:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
-2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
-2021-10-31T11:03:00:     at require (internal/modules/cjs/helpers.js:92:18)
-2021-10-31T11:03:00:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
-2021-10-31T11:03:00:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
-2021-10-31T11:03:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
-2021-10-31T11:03:00:     at Module.load (internal/modules/cjs/loader.js:937:32)
-2021-10-31T11:03:00:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
-2021-10-31T11:03:00:     at Module.require (internal/modules/cjs/loader.js:961:19)
-2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
-2021-10-31T11:03:00:   code: 'MODULE_NOT_FOUND',
-2021-10-31T11:03:00:   requireStack: [
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
-2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
-2021-10-31T11:03:00:   ]
-2021-10-31T11:03:00: }
+
+2021-12-05T20:57:03: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:03:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:03:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:03:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:03:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:03:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:03:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:03:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:03:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:03:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:03:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:04: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:04:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:04:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:04:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:04:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:04:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:04:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:04:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:04:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:04:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:04:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:05: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:05:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:05:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:05:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:05:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:05:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:05:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:05:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:05:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:05:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:05:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:05: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:05:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:05:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:05:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:05:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:05:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:05:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:05:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:05:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:05:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:05:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:06: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:06:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:06:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:06:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:06:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:06:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:06:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:06:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:06:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:06:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:06:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:07: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:07:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:07:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:07:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:07:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:07:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:07:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:07:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:07:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:07:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:07:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:07: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:07:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:07:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:07:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:07:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:07:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:07:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:07:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:07:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:07:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:07:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:08: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:08:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:08:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:08:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:08:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:08:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:08:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:08:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:08:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:08:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:08:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:09: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:09:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:09:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:09:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:09:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:09:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:09:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:09:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:09:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:09:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:09:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:09: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:09:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:09:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:09:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:09:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:09:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:09:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:09:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:09:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:09:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:09:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:10: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:10:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:10:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:10:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:10:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:10:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:10:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:10:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:10:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:10:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:10:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:11: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:11:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:11:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:11:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:11:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:11:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:11:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:11:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:11:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:11:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:11:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-05T20:57:11: Error: Route.post() requires a callback function but got a [object Undefined]
+2021-12-05T20:57:11:     at Route.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:202:15)
+2021-12-05T20:57:11:     at Function.proto.<computed> [as post] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\index.js:510:19)
+2021-12-05T20:57:11:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\routes\uploadfile.route.js:8:8)
+2021-12-05T20:57:11:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-05T20:57:11:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-05T20:57:11:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-05T20:57:11:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-05T20:57:11:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-05T20:57:11:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2021-12-05T20:57:11:     at require (internal/modules/cjs/helpers.js:92:18)

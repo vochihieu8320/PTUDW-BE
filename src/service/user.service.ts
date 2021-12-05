@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const token_secret = process.env.JWT_TOKEN_SECRET || ""
+
 async function hashpass(password: string)
 {
     const password_hash = await  bcrypt.hash(password, 10);
@@ -45,6 +46,7 @@ function refreshToken(user: any)
 }
 
 
+// check token is valid or not
 async function authentication(req: any, res: any, next: any)
 {
   

@@ -17,23 +17,24 @@ const db_1 = __importDefault(require("./db/db"));
 const index_1 = __importDefault(require("./routes/index"));
 const http_1 = require("http");
 const socket_io_1 = require("socket.io");
-const conversation_conller_1 = __importDefault(require("./controller/conversation.conller"));
-const user_online_controller_1 = __importDefault(require("./controller/user-online.controller"));
 const cors = require("cors");
 const app = express();
 app.use(cors({
-    origin: ["http://localhost:4200", "http://localhost:3001", "https://app-chat-vch.herokuapp.com"]
+    origin: process.env.Domain_Fe
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const port = process.env.PORT || 3000;
 const httpServer = (0, http_1.createServer)(app);
+//create socker server
 const io = new socket_io_1.Server(httpServer, {
     cors: {
-        origin: ["http://localhost:4200", "http://localhost:3001", "https://app-chat-vch.herokuapp.com"],
+        origin: process.env.Domain_Fe,
     }
 });
+//conect to DB
 (0, db_1.default)();
+//create a namspace in order to authentication socket client
 const adminNamespace = io.of("/admin");
 adminNamespace.on("connection", (socket) => {
     console.log(socket.id);
@@ -45,65 +46,10 @@ adminNamespace.use((socket, next) => {
     }
     next();
 });
+//clinent comunicate with socker server
 io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
     socket.on("send-messages", (messages) => __awaiter(void 0, void 0, void 0, function* () {
-        const body = Object.assign({}, messages);
-        try {
-            const check = yield conversation_conller_1.default.create(body);
-            if (check) {
-                socket.broadcast.to(messages.channelID || "").emit("receive-messages", messages);
-            }
-        }
-        catch (error) {
-            console.log(error);
-        }
-    }));
-    socket.on("get_user_online", (channelID, callback) => __awaiter(void 0, void 0, void 0, function* () {
-        try {
-            const user_online = yield user_online_controller_1.default.getUserOnline(channelID);
-            callback({
-                status: "ok"
-            });
-            io.to(channelID).emit("received_user_online", user_online);
-        }
-        catch (error) {
-            console.log("error", error);
-        }
-    }));
-    socket.on("join-room", (userID, username, channelID, callback) => __awaiter(void 0, void 0, void 0, function* () {
-        socket.join(channelID);
-        try {
-            const message = yield conversation_conller_1.default.getChannelConversation(channelID);
-            yield user_online_controller_1.default.Create(userID, username, channelID, socket.id);
-            callback({
-                status: "ok"
-            });
-            io.to(channelID).emit("received-room-messages", message);
-        }
-        catch (error) {
-            console.log(error);
-        }
-    }));
-    socket.on('disconnected', (userID, channelID, callback) => __awaiter(void 0, void 0, void 0, function* () {
-        try {
-            const user_online = yield user_online_controller_1.default.userOfline(userID, channelID);
-            callback({
-                status: user_online
-            });
-        }
-        catch (error) {
-            console.log(error);
-        }
-    }));
-    socket.on("disconnect", () => __awaiter(void 0, void 0, void 0, function* () {
-        try {
-            yield user_online_controller_1.default.userOffbrowser(socket.id);
-            io.emit('user-off-browser', socket.id);
-        }
-        catch (error) {
-            console.log(error);
-        }
     }));
 }));
-httpServer.listen(port, () => { console.log(`Server listen at port ${port}}`); });
+httpServer.listen(port, () => { console.log(`commit 1`); });
 (0, index_1.default)(app);

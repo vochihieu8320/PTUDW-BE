@@ -43,6 +43,7 @@ function refreshToken(user) {
     }, token_secret);
     return token;
 }
+// check token is valid or not
 function authentication(req, res, next) {
     return __awaiter(this, void 0, void 0, function* () {
         const autHeader = req.headers["authorization"];
