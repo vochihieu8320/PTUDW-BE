@@ -38,10 +38,9 @@ const User = new mongoose_1.default.Schema({
         required: true,
         minlength: 0
     },
-    isOnline: {
-        //1 for online 2 for ofline
-        type: Boolean
-    },
+    reset_digest: {
+        type: String
+    }
 }, { timestamps: true });
 const model = mongoose_1.default.model('User', User);
 exports.default = model;

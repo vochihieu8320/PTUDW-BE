@@ -42,11 +42,11 @@ const User = new mongoose.Schema(
             required: true,
             minlength: 0
         },
-        isOnline:
+        reset_digest:
         {
-            //1 for online 2 for ofline
-            type: Boolean
-        },
+            type: String
+        }
+
     },
     { timestamps: true }
 )

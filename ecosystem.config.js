@@ -7,7 +7,9 @@ module.exports = {
       NODE_ENV: "development",
       db : "mongodb://localhost:27017/AppChat",
       JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
-      Domain_Fe: "http://localhost:4200"
+      Domain_Fe: "http://localhost:4200",
+      email_password: "hay them vao de test",
+      email_name: "hay them vao de test",
     },
     env_production: {
       PORT: 3000,

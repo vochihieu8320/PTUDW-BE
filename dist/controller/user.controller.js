@@ -8,31 +8,51 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+const user_service_1 = __importDefault(require("../service/user.service"));
+const mail_service_1 = __importDefault(require("../service/mail.service"));
+const user_model_1 = __importDefault(require("../model/user.model"));
+const mailer_1 = __importDefault(require("../mailer/mailer"));
+const template_1 = __importDefault(require("../email_template/template"));
+const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 class NewController {
-    Register(req, res) {
+    forgot_pwd(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-        });
-    }
-    Login(req, res) {
-        return __awaiter(this, void 0, void 0, function* () {
-        });
-    }
-    refreshToken(req, res) {
-        return __awaiter(this, void 0, void 0, function* () {
-        });
-    }
-    createUser(req, res) {
-        return __awaiter(this, void 0, void 0, function* () {
-        });
-    }
-    check_login(req, res) {
-        return __awaiter(this, void 0, void 0, function* () {
-        });
-    }
-    Logout(req, res) {
-        return __awaiter(this, void 0, void 0, function* () {
+            const email = req.body.email;
+            try {
+                const user = yield user_model_1.default.findOne({ email: email });
+                if (user) {
+                    const regCode = user_service_1.default.generateRegCode();
+                    const hash_reqCode = yield user_service_1.default.hashpass(regCode);
+                    //store hash_code in database
+                    yield user_model_1.default.findOneAndUpdate({ email: email }, { reset_digest: hash_reqCode });
+                    const link = `${process.env.Domain_Fe}/forgot-pwd/${regCode}?email=${email}`;
+                    const form = {
+                        name: user.name,
+                        link: link
+                    };
+                    //create a template
+                    const forgot_pwd_template = template_1.default.forgot_pwd(form);
+                    //create option (sent to who ??)
+                    const mail_options = mail_service_1.default.mail_options(email, forgot_pwd_template, "Forgot password");
+                    //conect mail server
+                    const transporter = mailer_1.default.connect();
+                    //send mail
+                    mail_service_1.default.send_mail(transporter, mail_options);
+                    res.sendStatus(200);
+                }
+                else {
+                    res.sendStatus(400);
+                }
+            }
+            catch (error) {
+                console.log(error);
+                res.sendStatus(500);
+            }
         });
     }
 }

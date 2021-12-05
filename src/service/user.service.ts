@@ -2,6 +2,12 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const token_secret = process.env.JWT_TOKEN_SECRET || ""
+const characters = [
+    'A', 'B', 'C', '0', 'D', '1', 'E', 'F', 'G',
+    '2', 'H', 'I', '3', 'J', 'K', '4', 'l', 'M',
+    'N', '5', 'O', 'P', '6', 'Q', 'R', 'S', '7',
+    'T', 'U', 'V', '8', 'W', '9', 'X', 'Y', 'Z','A']
+
 
 async function hashpass(password: string)
 {
@@ -45,6 +51,16 @@ function refreshToken(user: any)
     return token
 }
 
+//auto generateCode
+function generateRegCode(): string {
+    let regCode = "";
+    for (let i = 0; i < 10; i++) {
+      const rand = Math.floor(Math.random() * characters.length); 
+      regCode = regCode + characters[rand];
+    };
+    return regCode;
+  };
+
 
 // check token is valid or not
 async function authentication(req: any, res: any, next: any)
@@ -82,4 +98,4 @@ async function authentication(req: any, res: any, next: any)
 
 
 
-export default {hashpass, comparepass, JWT, authentication, refreshToken}
+export default {hashpass, comparepass, JWT, authentication, refreshToken, generateRegCode}
