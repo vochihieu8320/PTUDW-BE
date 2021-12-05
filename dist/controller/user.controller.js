@@ -55,5 +55,26 @@ class NewController {
             }
         });
     }
+    changePwd(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { email, password, new_password, new_password_confirmation } = req.body;
+            if (new_password_confirmation == new_password) {
+                const user = yield user_model_1.default.findOne({ email: email });
+                {
+                    if (yield user_service_1.default.comparepass(password, user.password)) {
+                        const hash_newpassword = yield user_service_1.default.hashpass(new_password);
+                        yield user_model_1.default.findOneAndUpdate({ email: email }, { password: hash_newpassword });
+                        res.sendStatus(200);
+                    }
+                    else {
+                        res.json({ status: 400, error: "Password dont match" });
+                    }
+                }
+            }
+            else {
+                res.json({ status: 400, error: "New Password confirm dont match" });
+            }
+        });
+    }
 }
 exports.default = new NewController;

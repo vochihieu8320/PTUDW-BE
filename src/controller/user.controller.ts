@@ -46,7 +46,30 @@ class NewController
         }
     }
     
-
+    async changePwd(req: any, res: any)
+    {
+        const {email, password, new_password, new_password_confirmation} = req.body;
+        if(new_password_confirmation == new_password)
+        {
+            const user = <any> await User.findOne({ email: email});
+            {
+                if(await userService.comparepass(password, user.password))
+                {
+                    const hash_newpassword = await userService.hashpass(new_password);
+                    await User.findOneAndUpdate({email: email}, {password: hash_newpassword});
+                    res.sendStatus(200)
+                }
+                else
+                {
+                    res.json({status: 400, error: "Password dont match"})        
+                }
+            }
+        }
+        else
+        {
+            res.json({status: 400, error: "New Password confirm dont match"})
+        }
+    }
 }
 
 export default new NewController;
