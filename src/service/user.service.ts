@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-
 const token_secret = process.env.JWT_TOKEN_SECRET || ""
+
 
 async function hashpass(password: string)
 {

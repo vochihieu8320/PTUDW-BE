@@ -1,7 +1,7 @@
 
 import mongoose from 'mongoose';
 
-const User = new mongoose.Schema(
+const Login = new mongoose.Schema(
     {
         name: 
         {
@@ -15,26 +15,15 @@ const User = new mongoose.Schema(
             type: String,
             minlength: 8,
         },
-        phone: 
+        email:
         {
             type: String,
-            required: false,
-            length: 11
-        },
-        address:
-        {
-            type: String,
-            required: false,
-            minlength: 5,
-            maxlength : 50
-        },
-        avatar:
-        {
-            type: String,
-            required: false,
+            require: true,
+            unique: true,
+            required: true,
             minlength: 0
         },
-        email:
+        rftoken:
         {
             type: String,
             require: true,
@@ -51,5 +40,5 @@ const User = new mongoose.Schema(
     { timestamps: true}
 )
 
-const model = mongoose.model('User', User);
+const model = mongoose.model('Login', Login);
 export default model;
