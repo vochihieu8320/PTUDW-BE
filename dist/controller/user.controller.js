@@ -153,7 +153,7 @@ class NewController {
                 {
                     if (yield user_service_1.default.comparepass(password, user.password)) {
                         const hash_newpassword = yield user_service_1.default.hashpass(new_password);
-                        yield user_model_1.default.findOneAndUpdate({ email: email }, { password: hash_newpassword });
+                        yield user_model_1.default.findOneAndUpdate({ email: user.email }, { password: hash_newpassword });
                         res.sendStatus(200);
                     }
                     else {

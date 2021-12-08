@@ -8,8 +8,8 @@ module.exports = {
       db : "mongodb://localhost:27017/AppChat",
       JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
       Domain_Fe: "http://localhost:4200",
-      email_password: "@Hieu@0909400743",
-      email_name: "chihieu8320@gmail.com",
+      email_password: "your user name",
+      email_name: "your password",
     },
     env_production: {
       PORT: 3000,

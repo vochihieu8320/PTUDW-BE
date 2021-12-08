@@ -150,7 +150,7 @@ class NewController
                 if(await userService.comparepass(password, user.password))
                 {
                     const hash_newpassword = await userService.hashpass(new_password);
-                    await User.findOneAndUpdate({email: email}, {password: hash_newpassword});
+                    await User.findOneAndUpdate({email: user.email}, {password: hash_newpassword});
                     res.sendStatus(200)
                 }
                 else

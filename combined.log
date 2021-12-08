@@ -1,2 +1,174 @@
 2021-12-08T14:44:14: Server listen at 3000
 2021-12-08T14:44:14: connect to mongoDB
+2021-12-08T14:45:14: Server listen at 3000
+2021-12-08T14:45:14: connect to mongoDB
+2021-12-08T22:07:05: Server listen at 3000
+2021-12-08T22:07:05: connect to mongoDB
+2021-12-08T22:07:59: Server listen at 3000
+2021-12-08T22:07:59: connect to mongoDB
+2021-12-08T22:11:29: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:11:29: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s8sm2817932pgl.77 - gsmtp
+2021-12-08T22:11:29:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:11:29:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:11:29:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:11:29:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:11:29:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:11:29:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:11:29:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:11:29:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:11:29:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:11:29:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:11:29:   code: 'EAUTH',
+2021-12-08T22:11:29:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:11:29:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s8sm2817932pgl.77 - gsmtp',
+2021-12-08T22:11:29:   responseCode: 534,
+2021-12-08T22:11:29:   command: 'AUTH PLAIN'
+2021-12-08T22:11:29: }
+2021-12-08T22:11:55: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:11:55: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u32sm4287750pfg.220 - gsmtp
+2021-12-08T22:11:55:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:11:55:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:11:55:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:11:55:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:11:55:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:11:55:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:11:55:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:11:55:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:11:55:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:11:55:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:11:55:   code: 'EAUTH',
+2021-12-08T22:11:55:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:11:55:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u32sm4287750pfg.220 - gsmtp',
+2021-12-08T22:11:55:   responseCode: 534,
+2021-12-08T22:11:55:   command: 'AUTH PLAIN'
+2021-12-08T22:11:55: }
+2021-12-08T22:12:48: Server listen at 3000
+2021-12-08T22:12:48: connect to mongoDB
+2021-12-08T22:12:51: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:12:51: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ot7sm6772675pjb.21 - gsmtp
+2021-12-08T22:12:51:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:12:51:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:12:51:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:12:51:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:12:51:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:12:51:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:12:51:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:12:51:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:12:51:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:12:51:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:12:51:   code: 'EAUTH',
+2021-12-08T22:12:51:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:12:51:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ot7sm6772675pjb.21 - gsmtp',
+2021-12-08T22:12:51:   responseCode: 534,
+2021-12-08T22:12:51:   command: 'AUTH PLAIN'
+2021-12-08T22:12:51: }
+2021-12-08T22:14:50: Server listen at 3000
+2021-12-08T22:14:50: connect to mongoDB
+2021-12-08T22:14:57: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:14:57: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor t186sm3813808pfc.122 - gsmtp
+2021-12-08T22:14:57:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:14:57:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:14:57:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:14:57:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:14:57:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:14:57:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:14:57:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:14:57:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:14:57:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:14:57:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:14:57:   code: 'EAUTH',
+2021-12-08T22:14:57:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:14:57:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor t186sm3813808pfc.122 - gsmtp',
+2021-12-08T22:14:57:   responseCode: 534,
+2021-12-08T22:14:57:   command: 'AUTH PLAIN'
+2021-12-08T22:14:57: }
+2021-12-08T22:15:56: Server listen at 3000
+2021-12-08T22:15:56: connect to mongoDB
+2021-12-08T22:16:13: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:16:13: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor f2sm4231305pfe.132 - gsmtp
+2021-12-08T22:16:13:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:16:13:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:16:13:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:16:13:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:16:13:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:16:13:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:16:13:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:16:13:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:16:13:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:16:13:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:16:13:   code: 'EAUTH',
+2021-12-08T22:16:13:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:16:13:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor f2sm4231305pfe.132 - gsmtp',
+2021-12-08T22:16:13:   responseCode: 534,
+2021-12-08T22:16:13:   command: 'AUTH PLAIN'
+2021-12-08T22:16:13: }
+2021-12-08T22:19:36: Server listen at 3000
+2021-12-08T22:19:36: connect to mongoDB
+2021-12-08T22:19:38: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:19:38: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor t130sm3215479pgc.9 - gsmtp
+2021-12-08T22:19:38:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:19:38:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:19:38:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:19:38:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:19:38:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:19:38:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:19:38:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:19:38:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:19:38:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:19:38:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:19:38:   code: 'EAUTH',
+2021-12-08T22:19:38:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:19:38:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor t130sm3215479pgc.9 - gsmtp',
+2021-12-08T22:19:38:   responseCode: 534,
+2021-12-08T22:19:38:   command: 'AUTH PLAIN'
+2021-12-08T22:19:38: }
+2021-12-08T22:22:08: Server listen at 3000
+2021-12-08T22:22:08: connect to mongoDB
+2021-12-08T22:22:11: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:22:11: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor np1sm6790056pjb.22 - gsmtp
+2021-12-08T22:22:11:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:22:11:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:22:11:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:22:11:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:22:11:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:22:11:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:22:11:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:22:11:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:22:11:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:22:11:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:22:11:   code: 'EAUTH',
+2021-12-08T22:22:11:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:22:11:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor np1sm6790056pjb.22 - gsmtp',
+2021-12-08T22:22:11:   responseCode: 534,
+2021-12-08T22:22:11:   command: 'AUTH PLAIN'
+2021-12-08T22:22:11: }
+2021-12-08T22:27:36: TypeError: Cannot read property 'password' of null
+2021-12-08T22:27:36:     at C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js:154:81
+2021-12-08T22:27:36:     at Generator.next (<anonymous>)
+2021-12-08T22:27:36:     at fulfilled (C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js:5:58)
+2021-12-08T22:27:36:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-12-08T22:28:31: Server listen at 3000
+2021-12-08T22:28:31: connect to mongoDB
+2021-12-08T22:28:32: TypeError: Cannot read property 'password' of null
+2021-12-08T22:28:32:     at C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js:154:81
+2021-12-08T22:28:32:     at Generator.next (<anonymous>)
+2021-12-08T22:28:32:     at fulfilled (C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js:5:58)
+2021-12-08T22:28:32:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-12-08T22:30:03: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+2021-12-08T22:30:03: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u9sm4067767pfi.23 - gsmtp
+2021-12-08T22:30:03:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:30:03:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:30:03:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:30:03:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:30:03:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:30:03:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:30:03:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:30:03:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:30:03:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:30:03:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:30:03:   code: 'EAUTH',
+2021-12-08T22:30:03:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+2021-12-08T22:30:03:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u9sm4067767pfi.23 - gsmtp',
+2021-12-08T22:30:03:   responseCode: 534,
+2021-12-08T22:30:03:   command: 'AUTH PLAIN'
+2021-12-08T22:30:03: }
