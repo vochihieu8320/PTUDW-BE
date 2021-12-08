@@ -38,3 +38,39 @@
 2021-12-08T22:30:03:   responseCode: 534,
 2021-12-08T22:30:03:   command: 'AUTH PLAIN'
 2021-12-08T22:30:03: }
+2021-12-08T22:32:26: Server listen at 3000
+2021-12-08T22:32:26: connect to mongoDB
+2021-12-08T22:32:29: error Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+2021-12-08T22:32:29: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials u32sm4338033pfg.220 - gsmtp
+2021-12-08T22:32:29:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T22:32:29:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T22:32:29:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T22:32:29:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T22:32:29:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T22:32:29:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T22:32:29:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T22:32:29:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T22:32:29:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T22:32:29:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T22:32:29:   code: 'EAUTH',
+2021-12-08T22:32:29:   response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+2021-12-08T22:32:29:     '535 5.7.8  https://support.google.com/mail/?p=BadCredentials u32sm4338033pfg.220 - gsmtp',
+2021-12-08T22:32:29:   responseCode: 535,
+2021-12-08T22:32:29:   command: 'AUTH PLAIN'
+2021-12-08T22:32:29: }
+2021-12-08T22:32:33: MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2s" }
+2021-12-08T22:32:33:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-12-08T22:32:33:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-12-08T22:32:33:     at handleOperationResult (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-12-08T22:32:33:     at MessageStream.messageHandler (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-12-08T22:32:33:     at MessageStream.emit (events.js:400:28)
+2021-12-08T22:32:33:     at processIncomingData (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-12-08T22:32:33:     at MessageStream._write (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-12-08T22:32:33:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-12-08T22:32:33:     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+2021-12-08T22:32:33:     at Socket.ondata (internal/streams/readable.js:726:22) {
+2021-12-08T22:32:33:   index: 0,
+2021-12-08T22:32:33:   code: 11000,
+2021-12-08T22:32:33:   keyPattern: { name: 1 },
+2021-12-08T22:32:33:   keyValue: { name: 'vochihieu2s' }
+2021-12-08T22:32:33: }
