@@ -51,5 +51,5 @@ io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
     socket.on("send-messages", (messages) => __awaiter(void 0, void 0, void 0, function* () {
     }));
 }));
-httpServer.listen(port, () => { console.log(`commit 1`); });
+httpServer.listen(port, () => { console.log(`Server listen at ${port}`); });
 (0, index_1.default)(app);

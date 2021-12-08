@@ -55,6 +55,30 @@ class NewController {
             }
         });
     }
+    check_forgot_pwd(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { email, regCode } = req.body;
+            try {
+                const user = yield user_model_1.default.findOne({ email: email });
+                if (user) {
+                    if (yield user_service_1.default.comparepass(regCode, user.reset_digest)) {
+                        yield user_model_1.default.updateOne({ email: email }, { reset_digest: "" });
+                        res.sendStatus(200);
+                    }
+                    else {
+                        res.sendStatus(400);
+                    }
+                }
+                else {
+                    res.sendStatus(400);
+                }
+            }
+            catch (error) {
+                console.log(error);
+                res.sendStatus(500);
+            }
+        });
+    }
     changePwd(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { email, password, new_password, new_password_confirmation } = req.body;

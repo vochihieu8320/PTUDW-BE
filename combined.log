@@ -4522,3 +4522,53 @@
 2021-12-05T23:28:32: connect to mongoDB
 2021-12-05T23:46:13: commit 1
 2021-12-05T23:46:13: connect to mongoDB
+2021-12-05T23:49:34: commit 1
+2021-12-05T23:49:34: connect to mongoDB
+2021-12-08T10:00:26: commit 1
+2021-12-08T10:00:26: connect to mongoDB
+2021-12-08T10:01:15: Server listen at 3000
+2021-12-08T10:01:15: connect to mongoDB
+2021-12-08T10:25:42: Server listen at 3000
+2021-12-08T10:25:42: connect to mongoDB
+2021-12-08T10:28:24: error Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+2021-12-08T10:28:24: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials p15sm1204744pfh.193 - gsmtp
+2021-12-08T10:28:24:     at SMTPConnection._formatError (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T10:28:24:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T10:28:24:     at SMTPConnection.<anonymous> (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T10:28:24:     at SMTPConnection._processResponse (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T10:28:24:     at SMTPConnection._onData (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T10:28:24:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T10:28:24:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T10:28:24:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T10:28:24:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T10:28:24:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T10:28:24:   code: 'EAUTH',
+2021-12-08T10:28:24:   response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+2021-12-08T10:28:24:     '535 5.7.8  https://support.google.com/mail/?p=BadCredentials p15sm1204744pfh.193 - gsmtp',
+2021-12-08T10:28:24:   responseCode: 535,
+2021-12-08T10:28:24:   command: 'AUTH PLAIN'
+2021-12-08T10:28:24: }
+2021-12-08T10:29:10: error Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+2021-12-08T10:29:10: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials j7sm4786214pjf.41 - gsmtp
+2021-12-08T10:29:10:     at SMTPConnection._formatError (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-08T10:29:10:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-08T10:29:10:     at SMTPConnection.<anonymous> (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-08T10:29:10:     at SMTPConnection._processResponse (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-08T10:29:10:     at SMTPConnection._onData (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-08T10:29:10:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-08T10:29:10:     at TLSSocket.emit (events.js:400:28)
+2021-12-08T10:29:10:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-08T10:29:10:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-08T10:29:10:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-08T10:29:10:   code: 'EAUTH',
+2021-12-08T10:29:10:   response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+2021-12-08T10:29:10:     '535 5.7.8  https://support.google.com/mail/?p=BadCredentials j7sm4786214pjf.41 - gsmtp',
+2021-12-08T10:29:10:   responseCode: 535,
+2021-12-08T10:29:10:   command: 'AUTH PLAIN'
+2021-12-08T10:29:10: }
+2021-12-08T10:30:05: Server listen at 3000
+2021-12-08T10:30:05: connect to mongoDB
+2021-12-08T10:41:35: Server listen at 3000
+2021-12-08T10:41:35: connect to mongoDB
+2021-12-08T10:44:13: Server listen at 3000
+2021-12-08T10:44:13: connect to mongoDB

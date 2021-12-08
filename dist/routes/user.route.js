@@ -7,5 +7,6 @@ const express = require('express');
 const user_controller_1 = __importDefault(require("../controller/user.controller"));
 const router = express.Router();
 router.post('/forgot-pwd', user_controller_1.default.forgot_pwd);
+router.patch('/forgot-pwd', user_controller_1.default.check_forgot_pwd);
 router.post('/change-pwd', user_controller_1.default.changePwd);
 exports.default = router;

@@ -46,6 +46,35 @@ class NewController
         }
     }
     
+    async check_forgot_pwd(req: any, res: any)
+    {
+        const {email, regCode} = req.body;
+        try {
+            const user = <any> await User.findOne({email: email});
+            if(user)
+            {
+                if(await userService.comparepass(regCode, user.reset_digest))
+                {
+                    await User.updateOne({email: email}, {reset_digest: ""})
+                    res.sendStatus(200)
+                }
+                else
+                {
+                    res.sendStatus(400)
+                }
+            }
+            else
+            {
+                res.sendStatus(400)
+            }
+        } catch (error) {
+            console.log(error);
+            res.sendStatus(500)
+        }
+
+    }
+
+
     async changePwd(req: any, res: any)
     {
         const {email, password, new_password, new_password_confirmation} = req.body;
