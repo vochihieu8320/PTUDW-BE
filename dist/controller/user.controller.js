@@ -14,24 +14,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_service_1 = __importDefault(require("../service/user.service"));
 const user_model_1 = __importDefault(require("../model/user.model"));
-const login_model_1 = __importDefault(require("../model/login.model"));
 const Validation_service_1 = __importDefault(require("../service/Validation.service"));
 const jwt = require('jsonwebtoken');
 class NewController {
     Register(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const { error } = Validation_service_1.default.regisValidate(req.body);
-                if (error)
-                    return res.status(400).send(error.details[0].message);
+                // const { error } = validate.regisValidate(req.body);
+                // if (error)  return res.status(400).send(error.details[0].message);
                 const hashed = yield user_service_1.default.hashpass(req.body.password);
-                user_model_1.default.create({
+                yield user_model_1.default.create({
                     name: req.body.name,
-                    phone: req.body.phone,
-                    address: req.body.address,
                     email: req.body.email,
-                    password: hashed
+                    password: hashed,
+                    user_type: req.body.user_type
                 });
+                res.sendStatus(200);
             }
             catch (err) {
                 console.log(err);
@@ -54,26 +52,37 @@ class NewController {
                     return res.status(400).send('password is wrong');
                 //create token
                 const token = user_service_1.default.JWT(user);
-                const hashedtoken = yield user_service_1.default.hashpass(token);
+                const refreshToken = user_service_1.default.refreshToken(user);
+                //update fresh token
+                yield user_model_1.default.updateOne({ email: user.email, refreshToken: refreshToken });
                 res.json({
-                    token: hashedtoken,
-                    role: "customer"
+                    token: token,
+                    refreshToken: refreshToken
                 });
             }
         });
     }
     refreshToken(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const rfToken = user_service_1.default.refreshToken(req.body);
-            login_model_1.default.create({
-                name: req.body.name,
-                password: req.body.password,
-                email: req.body.email,
-                rfToken: rfToken
-            });
-            res.json({
-                rfToken: rfToken
-            });
+            const { email, refreshToken } = req.body;
+            //check refreshToken is valid or not
+            try {
+                const user = user_model_1.default.findOne({ email: email });
+                if (user.refreshToken === refreshToken) {
+                    const new_refresh_token = user_service_1.default.refreshToken(user);
+                    const new_token = user_service_1.default.JWT(user);
+                    //update new refreshtoken
+                    yield user_model_1.default.updateOne({ email: email }, { refreshToken: new_refresh_token });
+                    res.json({
+                        token: new_token,
+                        refreshToken: new_refresh_token
+                    });
+                }
+            }
+            catch (error) {
+                console.log(error);
+                res.sendStatus(500);
+            }
         });
     }
     createUser(req, res) {

@@ -1,6 +1,5 @@
 import userService from '../service/user.service';
 import User from '../model/user.model';
-import Login from '../model/login.model';
 import validate from '../service/Validation.service';
 const jwt = require('jsonwebtoken');
 
@@ -10,16 +9,17 @@ class NewController{
     async Register(req: any, res: any)
     {
         try{
-            const { error } = validate.regisValidate(req.body);
-            if (error)  return res.status(400).send(error.details[0].message);
+            // const { error } = validate.regisValidate(req.body);
+            // if (error)  return res.status(400).send(error.details[0].message);
             const hashed = await userService.hashpass(req.body.password);
-            User.create({
+            await User.create({
                 name: req.body.name,
-                phone: req.body.phone,
-                address: req.body.address,
                 email: req.body.email,
-                password: hashed
+                password: hashed,
+                user_type: req.body.user_type
             })
+            
+            res.sendStatus(200)
         }catch(err){
             console.log(err);
         }    
@@ -39,25 +39,37 @@ class NewController{
                     if(!validPass) return res.status(400).send('password is wrong');
                     //create token
                     const token = userService.JWT(user)
-                    const hashedtoken = await userService.hashpass(token)
+                    const refreshToken = userService.refreshToken(user)
+                    //update fresh token
+                    await User.updateOne({email: user.email, refreshToken: refreshToken})
                     res.json({
-                        token:hashedtoken,
-                        role:"customer"
+                        token: token,
+                        refreshToken: refreshToken
                     });
                 }
     }
     async refreshToken(req: any, res: any)
     {
-        const rfToken = userService.refreshToken(req.body);
-        Login.create({
-            name:req.body.name,
-            password:req.body.password,
-            email:req.body.email,
-            rfToken:rfToken
-        })
-        res.json({
-            rfToken:rfToken
-        })
+        const {email, refreshToken} = req.body;
+        //check refreshToken is valid or not
+        try {
+            const user =<any>User.findOne({email: email});
+            if(user.refreshToken === refreshToken)
+            {
+                const new_refresh_token = userService.refreshToken(user);
+                const new_token = userService.JWT(user);
+                //update new refreshtoken
+                await User.updateOne({email: email}, {refreshToken: new_refresh_token})
+                res.json({
+                    token: new_token,
+                    refreshToken: new_refresh_token
+                })
+            }
+        } catch (error) {
+            console.log(error);
+            res.sendStatus(500)
+        }
+        
 
     }
 

@@ -35,13 +35,18 @@ const User = new mongoose_1.default.Schema({
         type: String,
         require: true,
         unique: true,
+        match: /.+\@.+\..+/,
+        minlength: 9,
+        maxlength: 50
+    },
+    user_type: {
+        type: String,
         required: true,
-        minlength: 0
     },
-    isOnline: {
-        //1 for online 2 for ofline
-        type: Boolean
-    },
+    refreshToken: {
+        type: String,
+    }
 }, { timestamps: true });
+User.index({ email: 1 });
 const model = mongoose_1.default.model('User', User);
 exports.default = model;

@@ -39,17 +39,21 @@ const User = new mongoose.Schema(
             type: String,
             require: true,
             unique: true,
-            required: true,
-            minlength: 0
+            match: /.+\@.+\..+/,
+            minlength: 9,
+            maxlength: 50
         },
-        isOnline:
+        user_type:
         {
-            //1 for online 2 for ofline
-            type: Boolean
+            type: String,
+            required: true,
         },
+        refreshToken: {
+            type: String,
+        }
     },
     { timestamps: true}
 )
-
+User.index({email: 1})
 const model = mongoose.model('User', User);
 export default model;

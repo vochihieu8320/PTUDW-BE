@@ -9,18 +9,9 @@ const regisValidate = (data: any) => {
         email: Joi.string()
         .min(6)
         .required().email(),
-        username: Joi.string()
-        .min(6)
-        .required().email(),
         password: Joi.string()
         .min(6)
-        .required(),
-        phone: Joi.string()
-        .min(10)
-        .required(),
-        address: Joi.string()
-        .min(6)
-        .required(),
+        .required()
     })
     return schema.validate(data)
 };
