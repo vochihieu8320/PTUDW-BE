@@ -1,12 +1,12 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-
 const token_secret = process.env.JWT_TOKEN_SECRET || ""
 const characters = [
     'A', 'B', 'C', '0', 'D', '1', 'E', 'F', 'G',
     '2', 'H', 'I', '3', 'J', 'K', '4', 'l', 'M',
     'N', '5', 'O', 'P', '6', 'Q', 'R', 'S', '7',
     'T', 'U', 'V', '8', 'W', '9', 'X', 'Y', 'Z','A']
+
 
 
 async function hashpass(password: string)

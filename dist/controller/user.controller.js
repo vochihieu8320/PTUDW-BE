@@ -17,8 +17,7 @@ const mail_service_1 = __importDefault(require("../service/mail.service"));
 const user_model_1 = __importDefault(require("../model/user.model"));
 const mailer_1 = __importDefault(require("../mailer/mailer"));
 const template_1 = __importDefault(require("../email_template/template"));
-const nodemailer = require('nodemailer');
-const jwt = require('jsonwebtoken');
+const Validation_service_1 = __importDefault(require("../service/Validation.service"));
 class NewController {
     forgot_pwd(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -55,6 +54,51 @@ class NewController {
             }
         });
     }
+    Register(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                // const { error } = validate.regisValidate(req.body);
+                // if (error)  return res.status(400).send(error.details[0].message);
+                const hashed = yield user_service_1.default.hashpass(req.body.password);
+                yield user_model_1.default.create({
+                    name: req.body.name,
+                    email: req.body.email,
+                    password: hashed,
+                    user_type: req.body.user_type
+                });
+                res.sendStatus(200);
+            }
+            catch (err) {
+                console.log(err);
+            }
+        });
+    }
+    Login(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { error } = Validation_service_1.default.loginValidate(req.body);
+            if (error)
+                return res.status(400).send(error.details[0].message);
+            //check email
+            const user = yield user_model_1.default.findOne({ email: req.body.email });
+            if (user) {
+                if (!user)
+                    return res.status(400).send('Email is wrong');
+                //check password
+                const validPass = user_service_1.default.comparepass(req.body.password, user.password);
+                if (!validPass)
+                    return res.status(400).send('password is wrong');
+                //create token
+                const token = user_service_1.default.JWT(user);
+                const refreshToken = user_service_1.default.refreshToken(user);
+                //update fresh token
+                yield user_model_1.default.updateOne({ email: user.email, refreshToken: refreshToken });
+                res.json({
+                    token: token,
+                    refreshToken: refreshToken
+                });
+            }
+        });
+    }
     check_forgot_pwd(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { email, regCode } = req.body;
@@ -71,6 +115,28 @@ class NewController {
                 }
                 else {
                     res.sendStatus(400);
+                }
+            }
+            catch (err) {
+                console.log(err);
+            }
+        });
+    }
+    refreshToken(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { email, refreshToken } = req.body;
+            //check refreshToken is valid or not
+            try {
+                const user = user_model_1.default.findOne({ email: email });
+                if (user.refreshToken === refreshToken) {
+                    const new_refresh_token = user_service_1.default.refreshToken(user);
+                    const new_token = user_service_1.default.JWT(user);
+                    //update new refreshtoken
+                    yield user_model_1.default.updateOne({ email: email }, { refreshToken: new_refresh_token });
+                    res.json({
+                        token: new_token,
+                        refreshToken: new_refresh_token
+                    });
                 }
             }
             catch (error) {

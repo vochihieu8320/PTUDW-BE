@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const host_db = process.env.db || "mongodb://localhost:27017/AppChat";
+const host_db = process.env.db || "mongodb+srv://1803:1803@cluster0.dwvix.mongodb.net/Auction";
 function connect() {
     return __awaiter(this, void 0, void 0, function* () {
         try {

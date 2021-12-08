@@ -1,7 +1,0 @@
-2021-12-05T23:10:29: TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Object
-2021-12-05T23:10:29:     at PassThrough.Writable.write (internal/streams/writable.js:285:13)
-2021-12-05T23:10:29:     at PassThrough.Writable.end (internal/streams/writable.js:567:10)
-2021-12-05T23:10:29:     at Immediate._onImmediate (C:\Users\84929\app-chat-api\node_modules\nodemailer\lib\mime-node\index.js:978:46)
-2021-12-05T23:10:29:     at processImmediate (internal/timers.js:464:21) {
-2021-12-05T23:10:29:   code: 'ERR_INVALID_ARG_TYPE'
-2021-12-05T23:10:29: }

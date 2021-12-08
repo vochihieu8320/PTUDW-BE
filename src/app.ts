@@ -57,10 +57,7 @@ io.on("connection",  async(socket) => {
 });
 
 
-
-
-
-httpServer.listen(port, ()=>{console.log(`Server listen at ${port}`)});
+httpServer.listen(port, ()=>{console.log(`Server listen at ${port}`)})
 
 
 route(app)
