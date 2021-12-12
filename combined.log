@@ -208,3 +208,353 @@
 2021-12-08T22:32:33:   keyPattern: { name: 1 },
 2021-12-08T22:32:33:   keyValue: { name: 'vochihieu2s' }
 2021-12-08T22:32:33: }
+2021-12-08T22:38:20: Server listen at 3000
+2021-12-08T22:38:20: connect to mongoDB
+2021-12-08T22:38:28: Server listen at 3000
+2021-12-08T22:38:28: connect to mongoDB
+2021-12-12T20:30:56: Server listen at 3000
+2021-12-12T20:30:56: connect to mongoDB
+2021-12-12T20:33:04: error Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+2021-12-12T20:33:04: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials s190sm7446771pgs.74 - gsmtp
+2021-12-12T20:33:04:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-12T20:33:04:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-12T20:33:04:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-12T20:33:04:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-12T20:33:04:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-12T20:33:04:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-12T20:33:04:     at TLSSocket.emit (events.js:400:28)
+2021-12-12T20:33:04:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-12T20:33:04:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-12T20:33:04:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-12T20:33:04:   code: 'EAUTH',
+2021-12-12T20:33:04:   response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+2021-12-12T20:33:04:     '535 5.7.8  https://support.google.com/mail/?p=BadCredentials s190sm7446771pgs.74 - gsmtp',
+2021-12-12T20:33:04:   responseCode: 535,
+2021-12-12T20:33:04:   command: 'AUTH PLAIN'
+2021-12-12T20:33:04: }
+2021-12-12T20:40:26: Server listen at 3000
+2021-12-12T20:40:26: connect to mongoDB
+2021-12-12T20:40:34: error Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+2021-12-12T20:40:34: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials l6sm9760207pfc.30 - gsmtp
+2021-12-12T20:40:34:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+2021-12-12T20:40:34:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+2021-12-12T20:40:34:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+2021-12-12T20:40:34:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+2021-12-12T20:40:34:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+2021-12-12T20:40:34:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+2021-12-12T20:40:34:     at TLSSocket.emit (events.js:400:28)
+2021-12-12T20:40:34:     at addChunk (internal/streams/readable.js:290:12)
+2021-12-12T20:40:34:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-12-12T20:40:34:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
+2021-12-12T20:40:34:   code: 'EAUTH',
+2021-12-12T20:40:34:   response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+2021-12-12T20:40:34:     '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l6sm9760207pfc.30 - gsmtp',
+2021-12-12T20:40:34:   responseCode: 535,
+2021-12-12T20:40:34:   command: 'AUTH PLAIN'
+2021-12-12T20:40:34: }
+2021-12-12T22:03:30: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:30: Require stack:
+2021-12-12T22:03:30: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:30: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:30: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:30: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:30: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:30:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:30:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:30:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:30:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:30:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:30:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:30:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:30:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:30:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:30:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:30:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:30:   requireStack: [
+2021-12-12T22:03:30:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:30:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:30:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:30:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:30:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:30:   ]
+2021-12-12T22:03:30: }
+2021-12-12T22:03:31: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:31: Require stack:
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:31:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:31:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:31:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:31:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:31:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:31:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:31:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:31:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:31:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:31:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:31:   requireStack: [
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:31:   ]
+2021-12-12T22:03:31: }
+2021-12-12T22:03:31: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:31: Require stack:
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:31: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:31:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:31:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:31:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:31:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:31:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:31:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:31:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:31:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:31:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:31:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:31:   requireStack: [
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:31:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:31:   ]
+2021-12-12T22:03:31: }
+2021-12-12T22:03:32: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:32: Require stack:
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:32:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:32:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:32:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:32:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:32:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:32:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:32:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:32:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:32:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:32:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:32:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:32:   requireStack: [
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:32:   ]
+2021-12-12T22:03:32: }
+2021-12-12T22:03:32: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:32: Require stack:
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:32: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:32:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:32:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:32:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:32:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:32:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:32:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:32:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:32:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:32:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:32:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:32:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:32:   requireStack: [
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:32:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:32:   ]
+2021-12-12T22:03:32: }
+2021-12-12T22:03:33: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:33: Require stack:
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:33:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:33:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:33:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:33:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:33:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:33:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:33:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:33:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:33:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:33:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:33:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:33:   requireStack: [
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:33:   ]
+2021-12-12T22:03:33: }
+2021-12-12T22:03:33: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:33: Require stack:
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:33: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:33:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:33:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:33:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:33:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:33:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:33:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:33:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:33:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:33:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:33:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:33:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:33:   requireStack: [
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:33:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:33:   ]
+2021-12-12T22:03:33: }
+2021-12-12T22:03:34: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:34: Require stack:
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:34:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:34:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:34:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:34:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:34:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:34:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:34:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:34:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:34:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:34:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:34:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:34:   requireStack: [
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:34:   ]
+2021-12-12T22:03:34: }
+2021-12-12T22:03:34: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:34: Require stack:
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:34: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:34:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:34:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:34:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:34:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:34:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:34:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:34:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:34:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:34:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:34:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:34:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:34:   requireStack: [
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:34:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:34:   ]
+2021-12-12T22:03:34: }
+2021-12-12T22:03:35: Error: Cannot find module 'bcrypt'
+2021-12-12T22:03:35: Require stack:
+2021-12-12T22:03:35: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js
+2021-12-12T22:03:35: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\controller\user.controller.js
+2021-12-12T22:03:35: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\user.route.js
+2021-12-12T22:03:35: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\routes\index.js
+2021-12-12T22:03:35: - C:\Users\84929\Desktop\PTUDW\app-chat\dist\app.js
+2021-12-12T22:03:35:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-12-12T22:03:35:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-12-12T22:03:35:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-12-12T22:03:35:     at Object.<anonymous> (C:\Users\84929\Desktop\PTUDW\app-chat\dist\service\user.service.js:12:16)
+2021-12-12T22:03:35:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-12-12T22:03:35:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-12-12T22:03:35:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-12-12T22:03:35:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-12-12T22:03:35:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-12-12T22:03:35:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-12-12T22:03:35:   code: 'MODULE_NOT_FOUND',
+2021-12-12T22:03:35:   requireStack: [
+2021-12-12T22:03:35:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\service\\user.service.js',
+2021-12-12T22:03:35:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\controller\\user.controller.js',
+2021-12-12T22:03:35:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\user.route.js',
+2021-12-12T22:03:35:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\routes\\index.js',
+2021-12-12T22:03:35:     'C:\\Users\\84929\\Desktop\\PTUDW\\app-chat\\dist\\app.js'
+2021-12-12T22:03:35:   ]
+2021-12-12T22:03:35: }
+2021-12-12T22:04:03: Server listen at 3000
+2021-12-12T22:04:03: connect to mongoDB
+2021-12-12T22:08:53: Server listen at 3000
+2021-12-12T22:08:53: connect to mongoDB
+2021-12-12T22:27:59: Server listen at 3000
+2021-12-12T22:28:00: connect to mongoDB
+2021-12-12T22:31:10: Server listen at 3000
+2021-12-12T22:31:10: connect to mongoDB
+2021-12-12T22:32:15: MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2ss" }
+2021-12-12T22:32:15:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-12-12T22:32:15:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-12-12T22:32:15:     at handleOperationResult (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-12-12T22:32:15:     at MessageStream.messageHandler (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-12-12T22:32:15:     at MessageStream.emit (events.js:400:28)
+2021-12-12T22:32:15:     at processIncomingData (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-12-12T22:32:15:     at MessageStream._write (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-12-12T22:32:15:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-12-12T22:32:15:     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+2021-12-12T22:32:15:     at Socket.ondata (internal/streams/readable.js:726:22) {
+2021-12-12T22:32:15:   index: 0,
+2021-12-12T22:32:15:   code: 11000,
+2021-12-12T22:32:15:   keyPattern: { name: 1 },
+2021-12-12T22:32:15:   keyValue: { name: 'vochihieu2ss' }
+2021-12-12T22:32:15: }
+2021-12-12T22:34:10: Server listen at 3000
+2021-12-12T22:34:10: connect to mongoDB
+2021-12-12T22:34:12: MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2ss" }
+2021-12-12T22:34:12:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-12-12T22:34:12:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-12-12T22:34:12:     at handleOperationResult (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-12-12T22:34:12:     at MessageStream.messageHandler (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-12-12T22:34:12:     at MessageStream.emit (events.js:400:28)
+2021-12-12T22:34:12:     at processIncomingData (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-12-12T22:34:12:     at MessageStream._write (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-12-12T22:34:12:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-12-12T22:34:12:     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+2021-12-12T22:34:12:     at Socket.ondata (internal/streams/readable.js:726:22) {
+2021-12-12T22:34:12:   index: 0,
+2021-12-12T22:34:12:   code: 11000,
+2021-12-12T22:34:12:   keyPattern: { name: 1 },
+2021-12-12T22:34:12:   keyValue: { name: 'vochihieu2ss' }
+2021-12-12T22:34:12: }
+2021-12-12T22:37:07: Server listen at 3000
+2021-12-12T22:37:08: connect to mongoDB
+2021-12-12T22:40:25: Server listen at 3000
+2021-12-12T22:40:28: connect to mongoDB

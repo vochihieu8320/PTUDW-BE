@@ -3,7 +3,6 @@ import mailService from '../service/mail.service'
 import User from '../model/user.model';
 import mail from "../mailer/mailer";
 import template from "../email_template/template"
-import validate from '../service/Validation.service';
 
 class NewController
 {
@@ -59,21 +58,20 @@ class NewController
             
             res.sendStatus(200)
         }catch(err){
+            res.json({status:400, error: "Name or Email is already exist"})
             console.log(err);
         }    
     }
     
     async Login (req: any, res: any)
     {
-        const { error } = validate.loginValidate(req.body);
-        if (error)  return res.status(400).send(error.details[0].message);
-            //check email
+     
             const user =<any> await User.findOne({email:req.body.email})
             if(user){
                 if (!user) return res.status(400).send('Email is wrong');
                     //check password
                    
-                    const validPass = userService.comparepass(req.body.password,user.password);
+                    const validPass = await userService.comparepass(req.body.password,user.password);
                     if(!validPass) return res.status(400).send('password is wrong');
                     //create token
                     const token = userService.JWT(user)

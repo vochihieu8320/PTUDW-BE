@@ -1,76 +1,40 @@
-2021-12-08T22:22:08: Server listen at 3000
-2021-12-08T22:22:08: connect to mongoDB
-2021-12-08T22:22:11: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
-2021-12-08T22:22:11: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor np1sm6790056pjb.22 - gsmtp
-2021-12-08T22:22:11:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
-2021-12-08T22:22:11:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
-2021-12-08T22:22:11:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
-2021-12-08T22:22:11:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
-2021-12-08T22:22:11:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
-2021-12-08T22:22:11:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
-2021-12-08T22:22:11:     at TLSSocket.emit (events.js:400:28)
-2021-12-08T22:22:11:     at addChunk (internal/streams/readable.js:290:12)
-2021-12-08T22:22:11:     at readableAddChunk (internal/streams/readable.js:265:9)
-2021-12-08T22:22:11:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
-2021-12-08T22:22:11:   code: 'EAUTH',
-2021-12-08T22:22:11:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
-2021-12-08T22:22:11:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor np1sm6790056pjb.22 - gsmtp',
-2021-12-08T22:22:11:   responseCode: 534,
-2021-12-08T22:22:11:   command: 'AUTH PLAIN'
-2021-12-08T22:22:11: }
-2021-12-08T22:28:31: Server listen at 3000
-2021-12-08T22:28:31: connect to mongoDB
-2021-12-08T22:30:03: error Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
-2021-12-08T22:30:03: 534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u9sm4067767pfi.23 - gsmtp
-2021-12-08T22:30:03:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
-2021-12-08T22:30:03:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
-2021-12-08T22:30:03:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
-2021-12-08T22:30:03:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
-2021-12-08T22:30:03:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
-2021-12-08T22:30:03:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
-2021-12-08T22:30:03:     at TLSSocket.emit (events.js:400:28)
-2021-12-08T22:30:03:     at addChunk (internal/streams/readable.js:290:12)
-2021-12-08T22:30:03:     at readableAddChunk (internal/streams/readable.js:265:9)
-2021-12-08T22:30:03:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
-2021-12-08T22:30:03:   code: 'EAUTH',
-2021-12-08T22:30:03:   response: '534-5.7.9 Application-specific password required. Learn more at\n' +
-2021-12-08T22:30:03:     '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u9sm4067767pfi.23 - gsmtp',
-2021-12-08T22:30:03:   responseCode: 534,
-2021-12-08T22:30:03:   command: 'AUTH PLAIN'
-2021-12-08T22:30:03: }
-2021-12-08T22:32:26: Server listen at 3000
-2021-12-08T22:32:26: connect to mongoDB
-2021-12-08T22:32:29: error Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
-2021-12-08T22:32:29: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials u32sm4338033pfg.220 - gsmtp
-2021-12-08T22:32:29:     at SMTPConnection._formatError (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
-2021-12-08T22:32:29:     at SMTPConnection._actionAUTHComplete (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
-2021-12-08T22:32:29:     at SMTPConnection.<anonymous> (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
-2021-12-08T22:32:29:     at SMTPConnection._processResponse (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
-2021-12-08T22:32:29:     at SMTPConnection._onData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
-2021-12-08T22:32:29:     at TLSSocket.SMTPConnection._onSocketData (C:\Users\84929\Desktop\PTUDW\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
-2021-12-08T22:32:29:     at TLSSocket.emit (events.js:400:28)
-2021-12-08T22:32:29:     at addChunk (internal/streams/readable.js:290:12)
-2021-12-08T22:32:29:     at readableAddChunk (internal/streams/readable.js:265:9)
-2021-12-08T22:32:29:     at TLSSocket.Readable.push (internal/streams/readable.js:204:10) {
-2021-12-08T22:32:29:   code: 'EAUTH',
-2021-12-08T22:32:29:   response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
-2021-12-08T22:32:29:     '535 5.7.8  https://support.google.com/mail/?p=BadCredentials u32sm4338033pfg.220 - gsmtp',
-2021-12-08T22:32:29:   responseCode: 535,
-2021-12-08T22:32:29:   command: 'AUTH PLAIN'
-2021-12-08T22:32:29: }
-2021-12-08T22:32:33: MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2s" }
-2021-12-08T22:32:33:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
-2021-12-08T22:32:33:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
-2021-12-08T22:32:33:     at handleOperationResult (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
-2021-12-08T22:32:33:     at MessageStream.messageHandler (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
-2021-12-08T22:32:33:     at MessageStream.emit (events.js:400:28)
-2021-12-08T22:32:33:     at processIncomingData (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
-2021-12-08T22:32:33:     at MessageStream._write (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
-2021-12-08T22:32:33:     at writeOrBuffer (internal/streams/writable.js:358:12)
-2021-12-08T22:32:33:     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
-2021-12-08T22:32:33:     at Socket.ondata (internal/streams/readable.js:726:22) {
-2021-12-08T22:32:33:   index: 0,
-2021-12-08T22:32:33:   code: 11000,
-2021-12-08T22:32:33:   keyPattern: { name: 1 },
-2021-12-08T22:32:33:   keyValue: { name: 'vochihieu2s' }
-2021-12-08T22:32:33: }
+2021-12-12T22:31:10: Server listen at 3000
+2021-12-12T22:31:10: connect to mongoDB
+2021-12-12T22:32:15: MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2ss" }
+2021-12-12T22:32:15:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-12-12T22:32:15:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-12-12T22:32:15:     at handleOperationResult (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-12-12T22:32:15:     at MessageStream.messageHandler (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-12-12T22:32:15:     at MessageStream.emit (events.js:400:28)
+2021-12-12T22:32:15:     at processIncomingData (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-12-12T22:32:15:     at MessageStream._write (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-12-12T22:32:15:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-12-12T22:32:15:     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+2021-12-12T22:32:15:     at Socket.ondata (internal/streams/readable.js:726:22) {
+2021-12-12T22:32:15:   index: 0,
+2021-12-12T22:32:15:   code: 11000,
+2021-12-12T22:32:15:   keyPattern: { name: 1 },
+2021-12-12T22:32:15:   keyValue: { name: 'vochihieu2ss' }
+2021-12-12T22:32:15: }
+2021-12-12T22:34:10: Server listen at 3000
+2021-12-12T22:34:10: connect to mongoDB
+2021-12-12T22:34:12: MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2ss" }
+2021-12-12T22:34:12:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-12-12T22:34:12:     at C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-12-12T22:34:12:     at handleOperationResult (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-12-12T22:34:12:     at MessageStream.messageHandler (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-12-12T22:34:12:     at MessageStream.emit (events.js:400:28)
+2021-12-12T22:34:12:     at processIncomingData (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-12-12T22:34:12:     at MessageStream._write (C:\Users\84929\Desktop\PTUDW\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-12-12T22:34:12:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-12-12T22:34:12:     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+2021-12-12T22:34:12:     at Socket.ondata (internal/streams/readable.js:726:22) {
+2021-12-12T22:34:12:   index: 0,
+2021-12-12T22:34:12:   code: 11000,
+2021-12-12T22:34:12:   keyPattern: { name: 1 },
+2021-12-12T22:34:12:   keyValue: { name: 'vochihieu2ss' }
+2021-12-12T22:34:12: }
+2021-12-12T22:37:07: Server listen at 3000
+2021-12-12T22:37:08: connect to mongoDB
+2021-12-12T22:40:25: Server listen at 3000
+2021-12-12T22:40:28: connect to mongoDB
